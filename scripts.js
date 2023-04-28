@@ -56,7 +56,7 @@ function init() {
     let number1 = Number(document.getElementById("number1Field").value);
     let number2 = Number(document.getElementById("number2Field").value);
     let result = number1 * number2;
+
     document.getElementById("answerField").value = result;
   
 }
-
