@@ -1,5 +1,6 @@
 //MORTGAGE CALCULATOR
 
+"use strict";
 //Define event for button action
 function init() {
     const calculateBtn = document.getElementById("btnCalculate");
@@ -8,25 +9,26 @@ function init() {
   
   //Inputs define
   function onCalculateBtnClicked() {
+    
     let principalAmount = Number(document.getElementById("principalAmount").value);
     let percentAmount = Number(document.getElementById("percentAmount").value);
     let yearsAmount = Number(document.getElementById("yearsAmount").value);
   
   //Compound interest calculator
-  
-      let nomialInterest = percentAmount / 100;
-      let accruedAmountField = principalAmount (1 + nomialInterest / 12) ^ 12 * yearsAmount;
-  
+ 
+    let
+    let accruedAmountField = principalAmount (1 + (percentAmount / 100) / 12) ^ 12 * yearsAmount;
+
   
   //Define formula for displaying monthly Payment
-      document.getElementById("monthlyPayField").value = monthlyPayField;
+    document.getElementById("monthlyPayField").value = result1;
   
   //Define formula for interest paid
-      document.getElementById("interestPaidField").value = interestPaidField;
+    document.getElementById("interestPaidField").value = result2;
   
   //Define formula for displaying total accrued amount
-  document.getElementById("accruedAmountField").value = accruedAmountField;
-  
+    document.getElementById("accruedAmountField").value = result3;
+
   
   }
   
