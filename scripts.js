@@ -62,14 +62,14 @@ function init() {
 
 //MORTGAGE CALCULATOR
 function init() {
-  const addBtn = document.getElementById("btnAdd");
-  addBtn.onclick = onAddBtnClicked;
+  const calculateBtn = document.getElementById("btnCalculate");
+  calculateBtn.onclick = onCalculateBtnClicked;
 }
 
-function onAddBtnClicked() {
-  let number1 = Number(document.getElementById("number1Field").value);
-  let number2 = Number(document.getElementById("number2Field").value);
-  let number3 = Number(document.getElementById("number3Field").value);
+function onCalculateBtnClicked() {
+  let principalAmount = Number(document.getElementById("principalAmount").value);
+  let percentAmount = Number(document.getElementById("percentAmount").value);
+  let yearsAmount = Number(document.getElementById("yearsAmount").value);
 
   let result = number1 + number2;
   document.getElementById("answerField").value = result;
