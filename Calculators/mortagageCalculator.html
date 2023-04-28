@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PageTitle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">Financial Calculators</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mortagageCalculator.html">Mortgage Calculator</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+      </div>
+    </nav>
+    
+</header>
+
+<body>
+    
+    <div class="container p-5">
+        <h1>Mortgage Calculator</h1>
+        <p>
+            This is used to calculate out how much a monthly payment for a loan would be (minus any insurance or taxes), as well as as how much interest you would pay over the life of the loan.
+        </p>
+        <p>
+        a. It would accept the principal, interest rate, and loan length from the user.
+        </p>
+        <p>
+        b. It would display the expected monthly payment and total interest paid.
+        </p>
+        
+
+        <div class="row g-2">
+            <div class="col">
+                <h1>Inputs</h1>
+                <!--Principal Input Field-->
+                <label for="" class="form-label">Principal</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                </div>
+
+                <!--Interest Rate Input Field-->
+                <label for="" class="form-label">Interest Rate</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">%</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+                <!--Years Input Field-->
+                <label for="" class="form-label">Years</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">🗓️</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+
+                <button type="button" class="btn btn-primary" id="btnCalculate">Calculate Answers</button>
+
+
+            </div>
+            <!--Answer Section-->
+
+            <!--answer1Field-->
+            <div class="col">
+                <h1>Calculations</h1>
+                <div class="input-group mb-3">
+                    <label for="" class="form-label">Expected Monthly Payment</label>
+                    <input type="text" class="form-control" name="" id="answer1Field" aria-describedby="helpId" placeholder="">
+                    <span class="input-group-text">/mo</span>        
+                </div>
+
+            <!--answer2Field-->
+            <label for="" class="form-label">Total Interest Paid</label>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" name="" id="answer2Field" aria-describedby="helpId" placeholder="">
+        
+                </div>
+        
+            </div>
+    
+    
+    
+
+        </div>
+
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+
+    <!-- External JavaScript-->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

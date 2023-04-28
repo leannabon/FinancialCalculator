@@ -58,3 +58,5 @@ function init() {
     document.getElementById("answerField").value = result;
   
 }
+
+//MORTGAGE CALCULATOR
