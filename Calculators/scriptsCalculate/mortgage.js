@@ -9,6 +9,9 @@ window.onload = init();
 function init() {
     const calculateBtn = document.getElementById("btnCalculate");
     calculateBtn.onclick = onCalculateBtnClicked;
+
+    const resetBtn = document.getElementById("btnReset");
+    resetBtn.onclick = reset;
   }
   
   //Inputs define
@@ -32,6 +35,18 @@ function init() {
   
   //Define formula for displaying total accrued amount
     document.getElementById("accruedAmountField").value = result3.toFixed(2);
+
+}
+
+function reset() {
+
+  document.getElementById('principalAmount').value = " ";
+  document.getElementById('percentAmount').value = " ";
+  document.getElementById('yearsAmount').value = " ";
+
+  document.getElementById('monthlyPayField').value = " ";
+  document.getElementById('interestPaidField').value = " ";
+  document.getElementById('accruedAmountField').value = " ";
 
 }
 
